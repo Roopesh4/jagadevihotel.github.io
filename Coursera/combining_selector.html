@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS1</title>
+    <style>
+        .hotdog p{
+            background: brown;
+        }
+        .hotdog p.mustard{
+            background: yellow;
+        }
+        
+        .btn{
+            font-size: 30px;
+        }
+        .btn-danger{
+            background: red;
+        }
+        .btn-success{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="hotdog">
+        <p>So far we have looked at how to use different types of selectors individually, but we also need to know how to use these
+        selectors together. By combining selectors we can be more specific about which element or group of elements we’d like to
+        select.</p>
+        <p class="mustard">For example, say we want to select all paragraph elements that reside within an element with a class attribute value of
+        hotdog and set their background color to brown. However, if one of those paragraphs happens to have the class attribute
+        value of mustard, we want to set its background color to yellow. Our HTML and CSS may look like the following:</p>
+    </div>
+    
+    <!--Layering styles with multiple clases-->
+    <p class="btn btn-danger">One way to keep the specificity weights of our selectors low is to be as modular as possible, sharing similar styles
+    from element to element. And one way to be as modular as possible is to layer on different styles by using multiple
+    classes</p>
+    <p class="btn btn-success">Elements within HTML can have more than one class attribute value so long as each value is space separated. With that,
+    we can place certain styles on all elements of one sort while placing other styles only on specific elements of that
+    sort.</p>
+</body>
+</html>

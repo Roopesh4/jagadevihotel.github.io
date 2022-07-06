@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Background Images Example</title>
+    <style>
+        .notice-success{
+            background: #67b11c;
+            background: url("tick.png") 20px 50% no-repeat, linear-gradient(#72c41f, #5c9e19);
+             background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_1.svg") 20px 50% no-repeat, linear-gradient(#72c41f, #fd11c2);
+            border: 2px solid black;
+            border-radius: 5px;
+            color: #fff;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 15px 20px 15px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="notice-success">
+        Woo hoo! Congratulations, you did it!
+    </div>
+</body>
+</html>

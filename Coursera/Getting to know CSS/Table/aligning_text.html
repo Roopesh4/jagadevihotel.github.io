@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border-collapse: separate;
+            border-spacing: 0;
+            color: #4a4a4d;
+            font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        th,td{
+            padding: 10px 15px;
+            vertical-align: middle;
+        }
+        thead{
+            background: #395870;
+            color: #fff;
+        }
+
+        th:first-child{
+            text-align: left;
+        }
+
+        tbody tr:nth-child(even){
+            background: #f0f0f2;
+        }
+        td{
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+        }
+        td:first-child{
+            border-left: 1px solid black;
+        }
+        .tender-name{
+            color: #395870;
+            display: block;
+        }
+        .tender-type,.tender-ev{
+            text-align: center;
+        }
+        .sno{
+            text-align: left;
+        }
+        tfoot{
+            text-align: right;
+        }
+        tfoot tr:last-child{
+            background: #f0f0f2;
+            color: #395870;
+            font-weight: bold;
+        }
+        tfoot tr:last-child,
+        td:first-child{
+            border-bottom-left-radius: 5px;
+        }
+        tfoot tr:last-child,
+        td:last-child{
+            border-bottom-right-radius: 5px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>E Procurement Tenders</caption>
+
+
+        <thead>
+            <tr>
+                <th scope="col">SI NO</th>
+                <th scope="col">Tender Title</th>
+                <th scope="col">Category</th>
+                <th scope="col">Estimated value</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="sno">1</td>
+                <td class="tender-name">Procurement of Long Bamboo size 18' to 20'</td>
+                <td class="tender-type">Goods</td>
+                <td class="tender-ev">1339800.00</td>
+            </tr>
+            <tr>
+                <td class="sno">2</td>
+                <td class="tender-name">Design Manufacture, Supply, Erection and commissioning of 5T Electrically operated Monorail
+                    Motorised Trolley
+                    for MS
+                    cage changing system</td>
+                <td class="tender-type">works</td>
+                <td class="tender-ev">1086000.00</td>
+            </tr>
+            <tr>
+                <td class="sno">3</td>
+                <td class="tender-name">Supply and Installation of 100 KVA Diesel Generator to the KSAWUV</td>
+                <td class="tender-type">Goods</td>
+                <td class="tender-ev">692500.00</td>
+            </tr>
+            <tr>
+                <td class="sno">4</td>
+                <td class="tender-name">Supply of assorted GM Gate Valves</td>
+                <td class="tender-type">Goods</td>
+                <td class="tender-ev">637318.00</td>
+            </tr>
+            <tr>
+                <td class="sno">5</td>
+                <td class="tender-name">SUPPLY OF BREAK FAST ALONG WITH BOILED EGG TO DRIVERS,AND POURAKARMICA HEALTH SECTION CLEANING STAFF
+                    IN HIRIYUR
+                    CMC</td>
+                <td class="tender-type">Services</td>
+                <td class="tender-ev">1239175.00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3"> Total applied</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>
